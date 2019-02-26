@@ -1,0 +1,20 @@
+<!--index.wxml-->
+<view >
+<swiper class='banner' autoplay circular="true" interval="2000">
+ <swiper-item wx:for='{{slideList}}'  wx:key='id' >
+   <image src='{{item.image}}' mode='aspectFill'></image>
+ </swiper-item>
+</swiper>
+</view>
+
+<view class='grids'>
+
+<view class='items' wx:for="{{cateList}}" wx:key='id'>
+<image src="{{item.icon}}"></image>
+<text>{{item.name}}</text>
+</view>
+
+
+
+</view>
+
